@@ -4,8 +4,8 @@
 This repository documents the physical architecture and software configuration of my begginer HomeLab environment. The core infrastructure is built on a 2-node Proxmox Virtual Environment cluster, designed to support future Cloud & DevOps projects.
 
 ## Hardware Specification
-* **Master Node:** [HP EliteDesk 800 G3 (pve-master)](docs/pve-master.md)
-* **Worker Node:** [HP ProDesk 600 G3 (pve-worker)](docs/pve-worker.md)
+* **Master Node:** [HP EliteDesk 800 G3 (pve-master)](docs/EliteDesk-Specification.md)
+* **Worker Node:** [HP ProDesk 600 G3 (pve-worker)](docs/ProDesk-Specification.md)
 * **Networking:** TP-Link TL-SG108E (Managed Layer 2 Switch)
 
 ## Network Architecture
