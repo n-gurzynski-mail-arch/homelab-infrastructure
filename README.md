@@ -1,7 +1,7 @@
 # homelab-infrastructure
 
 ## Overview
-This repository documents the physical architecture and software configuration of my begginer HomeLab environment. The core infrastructure is built on a 2-node Proxmox Virtual Environment cluster, designed to support future Cloud & DevOps projects.
+This repository documents the physical architecture and software configuration of my beginner HomeLab environment. The core infrastructure is built on a 2-node Proxmox Virtual Environment cluster, designed to support future Cloud & DevOps projects.
 
 ## Hardware Specification
 * **Master Node:** [HP EliteDesk 800 G3 (pve-master)](docs/EliteDesk-Specification.md)
