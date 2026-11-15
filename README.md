@@ -20,6 +20,9 @@ Currently operating on a flat `/24` subnet. (VLAN segmentation planned for futur
 * **Repository Optimization:** Removed commercial `pve-enterprise` and `ceph-squid` repositories, successfully transitioning both nodes to `pve-no-subscription` to ensure system updates.
 * **Cluster Initialization:** Configured physical networking components, generated keys, and successfully established a functional Proxmox Datacenter.
 
+## Deployed Services & Automations
+* **[MobiDziennik to Notion API Sync](./services/mobidziennik-notion-sync):** A headless data pipeline running on a Debian LXC container. It handles HTTP POST authentication with a proprietary educational platform, parses DOM tables using BeautifulSoup, converts localized time strings to strict ISO 8601 formats, and pushes JSON payloads to a Notion master database via REST API. Fully automated via a daily cron daemon.
+ 
 ## Next Steps
 * Deploying Infrastructure as Code (IaC) environments for testing.
 * AWS hybrid cloud integrations.
