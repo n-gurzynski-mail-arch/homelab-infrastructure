@@ -30,22 +30,22 @@ The script uses environment variables for credentials so you don't have to hardc
 python3 -m venv venv
 source venv/bin/activate
 pip install requests beautifulsoup4 python-dotenv
-
 ```
 
 3. **Set up the credentials:**
 Copy the template file to create your local environment file:
 ```bash
 cp .env.example .env
+```
+Open the new `.env` file and add your MobiDziennik login details and your Notion API `ntn_` secret.
 
-Open the new .env file and add your MobiDziennik login details and your Notion API ntn_ secret.
-**3.1 Test the pipeline manually:**
-
-Bash
+4. **Test the pipeline manually:**
+```bash
 python3 scraper.py
+```
 
-**3.2 Schedule the daemon:**
-Open your cron table (crontab -e) and add this line to execute the script daily at 17:00:
-
-Bash
+5. **Schedule the daemon:**
+Open your cron table (`crontab -e`) and add this line to execute the script daily at 17:00:
+```bash
 0 17 * * * cd /path/to/your/repo && /path/to/your/repo/venv/bin/python3 scraper.py >> /var/log/mobidziennik.log 2>&1
+```
